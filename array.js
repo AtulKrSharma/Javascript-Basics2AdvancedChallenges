@@ -1,12 +1,20 @@
-const cars = ['Subaru', 'Mazda', 'Tesla', 'Camery'];
+const cars = ['Subaru', 'Mazda', 'Tesla', 'Camry'];
 
-// console.log(cars);
-// console.log('@@@@@@@@@@@@@@@@@@');
+console.log(typeof cars);
+console.log(cars instanceof Array);
 
-// for (const iterator of cars) {
-//   console.log(iterator);
-// }
-
-for (let index = 0; index < cars.length; index++) {
-  console.log(`value of index is ${index} and value is ${cars[index]}`);
+//for loop
+for (let item = 0; item < cars.length; item++) {
+  console.log(item);
+  console.log(cars[item]);
 }
+
+//for of loop
+for (const item of cars) console.log(`I love ${item}`);
+
+// accessing
+console.log(cars[0]);
+console.log(cars[cars.length - 1]);
+
+//foreach loop
+cars.forEach((item) => console.log(`I love foreach ${item}`));

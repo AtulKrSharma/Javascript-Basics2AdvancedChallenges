@@ -1,12 +1,12 @@
 const mydummyObject = {
-  firstName: 'Jack',
-  lastName: 'Sparrow',
-  rollNo: 32,
+  firstName: 'Dhani',
+  lastName: 'Sharma',
+  rollNo: 20,
   address: {
     primary: '1713',
     secondary: '28',
   },
-  present: (subject) => `Jack will present ${subject}`,
+  present: (subject) => `${this.firstName} will present ${subject}`,
   nameAndRoll: function () {
     return this.firstName + ' ' + this.rollNo;
   },
@@ -17,6 +17,6 @@ const mydummyObject = {
 //   console.log(mydummyObject.iterator);
 // }
 
-for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
+for (const property in mydummyObject) {
+  console.log(`${property}: ${mydummyObject[property]}`);
 }
