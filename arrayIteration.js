@@ -7,11 +7,14 @@ console.log(numbers);
 
 // numbers.forEach((iterator) => console.log(iterator * 2));
 
-// console.log(`~~~~`);
+console.log(`~~~~`);
 
-// for (const number of numbers) {
-//   console.log(number);
-// }
+for (const number of numbers) {
+  console.log(number);
+}
+console.log(`~~~~`);
 
 // const name = 'AtulSharma';
 // for (const iterator of name) console.log(iterator);
+
+for (const iterator in numbers) console.log(numbers[iterator]);
