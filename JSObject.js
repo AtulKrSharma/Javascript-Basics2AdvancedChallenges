@@ -1,3 +1,27 @@
 import js from './j.json' with {type: "json"};
 
-console.log(JSON.parse(js));
+console.log(js);
+
+const jsObject = {
+  name: 'Alice',
+  age: 30,
+  dept: 'IT',
+
+  greet: (personName) => console.log(`hi, ${personName}`),
+  greetLocal: function () {
+    console.log(`hi, ${this.name}`);
+  },
+};
+
+jsObject.greet('Danny');
+console.log(jsObject.name);
+jsObject.greetLocal();
+
+for (const iterator in jsObject) {
+  console.log(`${iterator}: ${jsObject[iterator]}`);
+}
+console.log(`~~~~~~~~~~~`);
+
+console.log(jsObject);
+console.log(`~~~~~~~~~~~`);
+console.log(JSON.stringify(jsObject));
