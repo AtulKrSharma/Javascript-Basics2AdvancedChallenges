@@ -1,18 +1,19 @@
-class MyClass {
-  name: string;
-  age: number;
+class Engineer {
+  private readonly name: string;
+  private readonly stream: string;
+  private readonly year: number;
 
-  constructor(name: string, age: number) {
+  constructor(name: string, stream: string, year: number) {
     this.name = name;
-    this.age = age;
+    this.stream = stream;
+    this.year = year;
   }
 
-  getDetails(): string {
-    return `${this.name} has age ${this.age}`;
+  getFullDetails(): string {
+    return `Full details are ${this.name}-${this.stream}-${this.year}`;
   }
 }
 
-const primeClass: MyClass = new MyClass('Atul', 40);
-console.log(primeClass.name);
-console.log(primeClass.age);
-console.log(primeClass.getDetails());
+const engineer1 = new Engineer('Atul', 'ECE', 2001);
+console.log(engineer1);
+console.log(engineer1.getFullDetails());

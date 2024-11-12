@@ -1,14 +1,14 @@
-var MyClass = /** @class */ (function () {
-    function MyClass(name, age) {
+var Engineer = /** @class */ (function () {
+    function Engineer(name, stream, year) {
         this.name = name;
-        this.age = age;
+        this.stream = stream;
+        this.year = year;
     }
-    MyClass.prototype.getDetails = function () {
-        return "".concat(this.name, " has age ").concat(this.age);
+    Engineer.prototype.getFullDetails = function () {
+        return "Full details are ".concat(this.name, "-").concat(this.stream, "-").concat(this.year);
     };
-    return MyClass;
+    return Engineer;
 }());
-var primeClass = new MyClass('Atul', 40);
-console.log(primeClass.name);
-console.log(primeClass.age);
-console.log(primeClass.getDetails());
+var engineer1 = new Engineer('Atul', 'ECE', 2001);
+console.log(engineer1);
+console.log(engineer1.getFullDetails());
