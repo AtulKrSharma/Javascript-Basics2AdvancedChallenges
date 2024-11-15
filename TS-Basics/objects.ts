@@ -1,4 +1,4 @@
-const myObj = {
+const myObjx = {
   firstName: 'Jack',
   lastName: 'Sparrow',
   rollNo: 32,
@@ -9,7 +9,7 @@ const myObj = {
   },
 };
 
-function objReader(objecto: any): string {
+function objReaderx(objecto: any): string {
   let objConcater: string = '';
 
   for (const key in objecto) {
