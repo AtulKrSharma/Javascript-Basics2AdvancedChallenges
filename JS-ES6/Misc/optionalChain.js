@@ -5,4 +5,4 @@ const student = {
 };
 
 // Example usage
-console.log(student.college);
+console.log(student?.college);
