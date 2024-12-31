@@ -11,7 +11,7 @@ const jsObject = {
   greetLocal: function () {
     console.log(`hi, ${this.name}`);
   },
-  adder(param){return param*2};
+  adder(param){return param*2}
 };
 
 jsObject.greet('Danny');

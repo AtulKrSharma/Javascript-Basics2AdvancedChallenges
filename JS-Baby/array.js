@@ -2,6 +2,7 @@ const cars = ['Subaru', 'Mazda', 'Tesla', 'Camry'];
 
 console.log(typeof cars);
 console.log(cars instanceof Array);
+console.log(Array.isArray(cars));
 
 //for loop
 for (let item = 0; item < cars.length; item++) {

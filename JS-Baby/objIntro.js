@@ -12,7 +12,6 @@ const mydummyObject = {
   nameAndRoll: function () {
     return this.firstName + ' ' + this.rollNo;
   },
-
   fullName: function fullName() {
     return this.firstName + ' ' + this.lastName;
   },
