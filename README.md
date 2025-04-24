@@ -50,10 +50,4 @@ Feel free to fork this repo, suggest improvements, or submit a PR with new chall
 
 ---
 
-## Contact
-
-I'm sharing my journey on GitHub for anyone who wants to follow along or join the learning process. You can reach out to me through [LinkedIn](https://www.linkedin.com/in/atulkmrsharma/) or by email at [sharma.atulkumar29@gmail.com](mailto:sharma.atulkumar29@gmail.com).
-
----
-
 Happy Coding! 😊
